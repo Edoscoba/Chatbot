@@ -8,7 +8,7 @@ body {
 .wrapper {
     width: 100%;
     height: 100%;
-    background: #724ae8;
+    background:wheat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -26,6 +26,75 @@ body {
 .chat {
     height: 85%;
     width: 100%;
-    
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 
+}
+.chat_body {
+    /* background: #724ae8; */
+    width: 100%;
+    height: 20%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
+.chat_input {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+}
+
+input,button {
+    padding: .5px;
+    outline: 0;
+    border: none;
+}
+
+button {
+    color: #724ae8;
+    border-radius: 20px;
+    font-size: 1.1rem
+}
+.msg{
+    padding: 1rem;
+}
+.msg-rt{
+    background: #724ae8;
+    padding: .5rem;
+    border-radius: 20px 20px 0 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+@media screen and (max-height:300px) {
+    .header {
+        height: 40%;
+    }
+    .chat {
+        height: 60%;
+    }
+
+    .chat_body {
+        height: 60%;
+    }
+    .chat_input {
+        height: 40%;
+    }
+    
 }
