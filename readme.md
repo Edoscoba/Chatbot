@@ -35,5 +35,5 @@ If you'd like to contribute to the development of this chatbot, please fork the 
 
 ## Credits
 
-- The chatbot design and implementation were created by [Edoscoba].
+- The chatbot design and implementation were created by Edoscoba.
 - was able to learn how to create this thanks to @Web3bridge community
