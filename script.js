@@ -1,5 +1,5 @@
-alert("if you like what you see please star my repo , chat with my bot and i hope you enjoy playing around with him");
-alert(" You can ask me Whats your name?,Who designed you?, can you sing, tell me a joke?, who is a blockchain developer,what is a web development, what is javascript")
+ alert("if you like what you see please star my repo , chat with my bot and i hope you enjoy playing around with him");
+ alert(" You can ask him Whats your name?,Who designed you?, can you sing, tell me a joke?, who is a blockchain developer,what is web development, what is javascript")
 
 window.onload =()=>{
 
@@ -10,21 +10,21 @@ window.onload =()=>{
     cc = 0, sender = null,d = 0;
 
     const res = [
-       ` I am Simon bot`,
+       `I am Simon`,
         "I am just a month old",
         "Yes i will try",
         "Glad 😊 you agree with me",
-        "Hey!",
+        "Hello how can i assist you today!",
         "I am fine and you?",
         "happy to here that",
-        "i am proudly 👏👏 designed by obi simon populary known as obi simon",
+        "i am proudly 👏👏 designed by obi simon populary known as Edoscoba",
         `  Of course! Here's a lighthearted joke for you: <br> <br>
 
         Why don't scientists trust atoms? <br>
         
         Because they make up everything! 😄 <br>
         
-        I hope that brought a smile to your face! If you'd like to hear more jokes type 'MORE' or if there's anything else I can assist you with, feel free to let me know.`,
+        I hope that brought a smile to your face! If you'd like to hear more jokes just type more or if there's anything else I can assist you with, feel free to let me know.`,
         `Certainly! Here's a classic joke for you: <br> <br>
 
         Why don't skeletons fight each other? <br>
@@ -88,18 +88,18 @@ function bot_typing() {
 function AI(i) {
     i = i.toLowerCase();
     const query = [
-        [,"what is your name" ],
-        ["Your age","how old are you","What is your age"],
+        [,"what is your name","what's your name" ],
+        ["Your age","how old are you","What is your age","What's your age"],
         ["can you", "will you", "sing"],
         ["alright" ,"okay"],
         ["hi","hello","good morning","good afternoon"," good evening","good","hey"],
-        ["how are you","what's up","how re you"],
+        ["how are you","how are you doing","what's up","how re you"],
         ["i am","good","cool","fine"],
-        ["who created you","who made you","who designed you"],
+        ["who created you","who made you","who designed you","who design you","who design you"],
         [" tell me","can you", "joke", "a joke"],
-        ["more","more joke"],
+        ["more","tell me more","more joke"],
         ["what is a web development ", "web development"],
-        ["what is a","what is","javascript"],
+        ["what's","what is","javascript"],
         ["who is a blockchain developer","who is blockchain developer","blockchain"],
 
         
@@ -126,20 +126,20 @@ function AI(i) {
         case 0:
             d += 1;
             bot_typing();
-            return bot_res(sender+", Sorry my answers are limited",2000);
+            return bot_res(sender+", Sorry my answers are limited",4000);
             
             break;
         default :
        d = 0;
        bot_typing();
 
-       return bot_res("Here are list of what you can ask me <br> <ul><li>Whats your name?</li><li>How old are you?</li><li>can you sing?</li><li>tell me a joke?</li></ul>",2000);
+       return bot_res("Here are list of what you can ask me <br> <ul><li>Whats your name?</li><li>How old are you?</li><li>can you sing?</li><li>tell me a joke?</li><li>what is javascript</li><li>who is a blockchain developer?</li></ul>",2000);
     }
 }
 
 bot_typing();
 
-bot_res("Glad to have you here, Type your name so we get to know each other.",2000);
+bot_res("Hi, i am simon, type your name so we get to know each other.",2000);
 
 send.addEventListener("click",function(){
     this.disabled = true;
@@ -148,7 +148,7 @@ send.addEventListener("click",function(){
             cc += 1;
             sender = inp.value;
             bot_typing(2000);
-            bot_res("Welcome onboard "+inp.value ,2000);
+            bot_res("Welcome onboard "+inp.value + " so happy to chat with you",2000);
             setTimeout(()=>{
                 s = "";
                 if(sender != null){
