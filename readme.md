@@ -27,6 +27,7 @@ To customize the chatbot, you can modify the CSS and JavaScript files included i
 ## Compatibility
 
 The chatbot is designed to work on modern web browsers, including Chrome, Firefox, Safari, and Edge.
+It is also responsive to any mobile device
 
 ## Contributing
 
@@ -34,5 +35,5 @@ If you'd like to contribute to the development of this chatbot, please fork the 
 
 ## Credits
 
-- The chatbot design and implementation were created by [Your Name].
+- The chatbot design and implementation were created by [Edoscoba].
 - was able to learn how to create this thanks to @Web3bridge community
